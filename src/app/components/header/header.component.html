@@ -1,0 +1,8 @@
+<nav class="navbar navbar-faded bg-faded">
+    <a [routerLink]="['/home']" class="navbar-brand app-clickable">Movie Browser</a>
+    <form (submit)="submitHandler($event)" class="form-inline">
+      <input class="form-control mr-sm-2" type="search" name="queryTerm"
+       [(ngModel)]="queryTerm" placeholder="Search Movies..." aria-label="Search">
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
